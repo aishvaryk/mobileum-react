@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            width: 60%;
+            margin: 20px;
+        }
+    </style>
+
+   
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>Toolbar</legend>
+        <div>
+            Number
+            <input type='text' id='number' />
+            <input type='button' value='Add To List'  onclick="addToList()" />
+            
+            <input type='button' value='Clear Display' 
+                    onclick="clearDisplay()" />
+            
+            <input type='button' value='Reset Calculator' onclick="resetCalc()" />
+
+            <br/>
+            <input type='button' value='Sum'   onclick="add()" />
+            <input type='button' value='Average'  onclick="average()" />
+            <input type='button' value='Find Min'  onclick="findMin()" />
+
+        </div>
+
+    </fieldset>
+
+    <hr/>
+
+    <fieldset>
+        <legend>Console</legend>
+
+        <div id='console'>
+            <!-- <p>sum is 60</p>
+            <p>average is 20</p> -->
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Number List</legend>
+
+        <ul id='numberList'>
+            <!-- <li>29</li>
+            <li>11</li>
+            <li>10</li> -->
+        </ul>
+
+        <input type='button' value='refresh list' onclick="refreshList()"/>
+    </fieldset>
+
+    
+    <script>
+        var numberList = [];
+        var listToShow = [];
+        var consoleText = "";
+
+        var isEmpty = function(list) {
+            if (list.length == 0) {
+                return true;
+            }
+            else return false;
+        }
+
+        var addToList = function() {
+            const n = document.getElementById("number").value
+            if (!isNaN(n)) {
+                numberList.push(parseInt(n));
+                listToShow.push(parseInt(n));
+                document.getElementById("numberList").innerHTML += "<li>" + listToShow[listToShow.length - 1] + "</li>";
+            }
+            else {
+                consoleText = "Please enter a number";
+                document.getElementById("console").innerHTML = "Please enter a number";
+            }
+            
+            
+        }
+        var add = function () {
+            if (isEmpty(numberList)) {
+                console.log(0);
+                document.getElementById("console").innerHTML = "0";
+                return 0;
+            }
+            else {
+                var s = 0
+                for (var i = 0; i < numberList.length; i++) {
+                    s = s+ numberList[i];
+                }
+                console.log(s);
+
+                document.getElementById("console").innerHTML = "Sum is "+ s.toString();
+                return s;
+            }
+            
+        }
+
+        var average = function() {
+            let av = 0
+            if (isEmpty(numberList)) {
+                av = 0;
+
+            } 
+            else {
+                var avg = add(numberList)/numberList.length;
+                av = avg;
+            }
+
+            document.getElementById("console").innerHTML = "Average is "+ av.toString();
+        }
+
+        var clearDisplay = function() {
+            listToShow = [];
+            document.getElementById("numberList").innerHTML = "";
+            document.getElementById("console").innerHTML = "";
+        }
+
+        var resetCalc = function() {
+            listToShow = [];
+            numberList = [];
+            document.getElementById("numberList").innerHTML = "";
+            document.getElementById("console").innerHTML = "";
+        }
+
+        var findMin = function() {
+            var m = 999999999;
+            for (let i = 0; i <numberList.length; i++) {
+                if (numberList[i]<m) {
+                    m = numberList[i]
+                }
+            }
+            document.getElementById("console").innerHTML = "Minimum is"+ m.toString();
+
+        }
+
+        var refreshList = function() {
+            listToShow = [];
+            for (let i = 0; i <numberList.length; i++) {
+                listToShow.push(numberList[i]);
+            }
+            var listText = "";
+            for (let i = 0; i < listToShow.length; i++) {
+                listText += "<li>" + listToShow[listToShow.length - 1] + "</li>";
+            }
+            document.getElementById("numberList").innerHTML = listText;
+        }
+
+    </script>
+</body>
+
+</html>
