@@ -14,7 +14,7 @@ teachDrive = function (person, vehicleType) {
     }
 }
 
-Drive = function drive(vehicleType) {
+var drive = function drive(vehicleType) {
     if (this.license.includes(vehicleType)) {
         console.log(this.name + " is driving " + vehicleType)
     }
@@ -23,14 +23,14 @@ Drive = function drive(vehicleType) {
     }
 }
 
-issueLicense = function (person, vehicleType) {
+var issueLicense = function (person, vehicleType) {
     if (person.age < 18) {
         console.log("Age must be at least 18");
     }
     else {
         person.license.push(vehicleType);
         if (person.license.length == 1) {
-            person.drive = Drive;
+            person.drive = drive;
         }
     }
 }
