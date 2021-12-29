@@ -14,9 +14,10 @@ book05 = new Book("21 Lessons for the 21st Century", "Yuval Noah Harari", 140, 6
 
 var bookManager = {
     bookList: [book01, book02, book03, book04, book05],
+
     addBook: function (...books) {
         for (let book of books) {
-            bookList.push(book);
+            this.bookList[this.bookList.length] = book;
         }
     },
     getAllBooks: function () {
@@ -41,6 +42,7 @@ var bookManager = {
         }
         return returnList;
     },
+
     getBooksWithRatingabove : function (rating) {
         returnList = []
         for (let book of this.bookList) {
@@ -54,3 +56,5 @@ var bookManager = {
 
 console.log(bookManager.bookList);
 console.log(bookManager.getBooksByAuthor("Yuval"))
+console.log(bookManager.addBook(new Book("Harry Potter")))
+console.log(bookManager.bookList);
