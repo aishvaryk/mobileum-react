@@ -4,7 +4,7 @@ function Person(name, age) {
     this.license = [];
 }
 
-teachDrive = function (person, vehicleType) {
+var teachDrive = function (person, vehicleType) {
     if (person.age < 18) {
         console.log("Age must be at least 18");
     }
