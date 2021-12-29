@@ -16,9 +16,7 @@ var bookManager = {
     bookList: [book01, book02, book03, book04, book05],
 
     addBook: function (...books) {
-        for (let book of books) {
-            this.bookList[this.bookList.length] = book;
-        }
+        this.bookList = this.bookList.concat(books);
     },
     getAllBooks: function () {
         return this.bookList;
@@ -58,3 +56,4 @@ console.log(bookManager.bookList);
 console.log(bookManager.getBooksByAuthor("Yuval"))
 console.log(bookManager.addBook(new Book("Harry Potter")))
 console.log(bookManager.bookList);
+
