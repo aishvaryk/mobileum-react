@@ -14,7 +14,7 @@ var teachDrive = function (person, vehicleType) {
     }
 }
 
-var drive = function drive(vehicleType) {
+var drive = function (vehicleType) {
     if (this.license.includes(vehicleType)) {
         console.log(this.name + " is driving " + vehicleType)
     }
