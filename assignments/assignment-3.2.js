@@ -16,7 +16,8 @@ var bookManager = {
     bookList: [book01, book02, book03, book04, book05],
 
     addBook: function (...books) {
-        this.bookList = this.bookList.concat(books);
+        // this.bookList = this.bookList.concat(books);
+        this.bookList = [...this.bookList, ...books];
     },
     getAllBooks: function () {
         return this.bookList;
