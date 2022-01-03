@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Add Book</title>
+</head>
+<body>
+    <header>
+        <h1 class='siteTitle'>Book's Web</h1>
+        <ul class='nav'>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="add.html">Add Book</a></li>
+            <li><a href="authors">Authors</a></li>
+            
+        </ul>
+    </header>
+
+    <div>
+        <h1>Add Book</h1>
+    </div>
+    <div class="book-form">
+        <div class="isbn" >
+            <p style="display: inline;">ISBN</p>
+            <input type="text" name="isbn" id="isbn" value=""/>
+        </div>
+        <div class='cover' >
+            <p style="display: inline">Cover</p>
+            <input type="text" name="cover" id="cover" value=""/>
+        </div>
+        <div class='title' >
+            <p style="display: inline">Title</p>
+            <input type="text" name="title" id="title" value=""/>
+        </div>
+        <div class='author' >
+            <p style="display: inline">Author</p>
+            <input type="text" name="author" id="author" value=""/>
+        </div>
+        <div class='price' >
+            <p style="display: inline">Price</p>
+            <input type="text" name="price" id="price" value=""/>
+        </div>
+        <div class="rating" >
+            <p style="display: inline"> Rating</p>
+            <input type="text" name="rating" id="rating" value=""/>
+        </div>
+        <div class="form-button"><button onclick="BookFormPage.addBook()">Add Book</button></div>
+    </div>
+
+    <script src="scripts/utils.js"></script>
+    <script src='scripts/book.js'></script>
+    <script src='scripts/book-manager.js'></script>
+    <script src = 'scripts/add-book.js'></script>
+</body>
+</html>

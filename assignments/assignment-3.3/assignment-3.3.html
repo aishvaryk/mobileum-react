@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue",Helvetica;
+        }
+        .toolbar {
+            height: 50px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper {
+            
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="toolbar" style="display: flex">
+            <div>
+                Search
+            </div>
+            <form>
+                <select name="authors" id="authors">
+                </select>
+                <input type="text" id="text"/>
+                <button type="submit" id="" onclick=""></button>
+            </form>
+        </div>
+        <div class="table">
+            <table id="table">
+                <tr>
+                  <th>Cover</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Price</th>
+                  <th>Rating</th>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <script src="books5.json"></script>
+    <script src="assignment-3.3.js"></script>
+</body>
+</html>
