@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "jest": "^27.4.6"
+  },
+  "name": "my-work",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aishvaryk/mobileum-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aishvaryk/mobileum-react/issues"
+  },
+  "homepage": "https://github.com/aishvaryk/mobileum-react#readme",
+  "description": ""
+}
