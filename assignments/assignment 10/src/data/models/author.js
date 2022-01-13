@@ -12,8 +12,8 @@ module.exports=(sequelize) =>{
                 type: DataTypes.STRING,
                 primaryKey: true
             },
-            biography: DataTypes.STRING,
-            photograph: DataTypes.STRING,
+            bio: DataTypes.STRING,
+            photo: DataTypes.STRING,
         }
     );
 } 

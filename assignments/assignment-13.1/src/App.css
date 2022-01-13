@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+  font-size: 20px;
+  color: orangered;
+}
+
+.site-title {
+  padding-left: 20px;
+  color: orchid;
+  font-size: 2em;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+  height: 600px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.scoreCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-radius: 5px;
+  height: 560px;
+  width: 30%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
+.scoreCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.status {
+  display: flex;
+  width: 95%;
+  padding:10px;
+  justify-content: space-between;
+  font-family: Courier;
+  background-color: rgba(0, 0, 0, 0.678);
+  color: #fff;
+}
+
+.scoreHeading {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: orchid;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  height: 80px;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.game {
+  padding: 10px;
+  width: 95%;
+  margin-top: 30px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.board {
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.cells {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.resetButton {
+  width: 150px;
+  height: 40px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: white;
+  color: #000;
+  border: solid 2px #1c89ff;
+}
+.cell {
+  width: 30%;
+  height: 140px;
+  margin-bottom: 20px;
+  background-color: white;
+}

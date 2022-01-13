@@ -8,12 +8,12 @@ module.exports=(sequelize) =>{
         {
             //properties of his model
             username: DataTypes.STRING,
-            email: {
+            emailId: {
                 type: DataTypes.STRING,
                 primaryKey: true
             },
             password: DataTypes.STRING,
-            photograph: DataTypes.STRING,
+            photo: DataTypes.STRING,
     
         }
     );
