@@ -1,0 +1,71 @@
+@import "./variables";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.AppHeader {
+  background-color: $primary_color;
+  color: $primary_contrast_color;
+}
+
+.Screen {
+  margin: 10px;
+  /* border:1px solid gray; */
+  flex: 1;
+
+  h1 {
+    color: $primary_color;
+  }
+  h3 {
+    font-size: 1.5 em;
+    font-style: italic;
+  }
+  .badge {
+    margin: 2px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $primary_color;
+  color: $primary_contrast_color;
+  text-align: center;
+}
+
+.navbar-light .navbar-brand {
+  color: $primary_contrast_color !important;
+  font-weight: bold;
+}
+
+.BookListScreen {
+  li {
+    list-style: none;
+    margin: 10px;
+  }
+  img {
+    height: 80px;
+    margin: 5px;
+    box-shadow: -2px -2px 2px $primary_color;
+  }
+}
+
+.list-group-item .active {
+  background-color: $primary_color !important;
+}
+
+.BookDetailsScreen {
+  img {
+    width: 90%;
+    height: auto;
+    border: 10px solid $primary_color;
+    box-shadow: -5px -5px 5px gray;
+    border-radius: 10px;
+    padding: 0px;
+  }
+}

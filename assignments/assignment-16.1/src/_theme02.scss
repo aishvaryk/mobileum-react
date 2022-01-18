@@ -1,0 +1,51 @@
+$orange-yellow-crayola: #fed766ff;
+$feldgrau: #4a5859ff;
+$candy-pink: #db6c79ff;
+$forest-green-crayola: #6cae75ff;
+$brick-red: #c83e4dff;
+
+$vivid-burgundy: #a61c3cff;
+$black-coral: #5e6472ff;
+$green-yellow-crayola: #fff7aeff;
+$coral: #ff8552ff;
+$may-green: #6a994eff;
+
+$dark-slate-gray: #384d48ff;
+$cyan-process: #08b2e3ff;
+$laurel-green: #acad94ff;
+$orchid-pink: #f1c8dbff;
+$cerise: #e43f6fff;
+
+
+
+$primary_color: $may-green;
+$primary_contrast_color: $green-yellow-crayola;
+
+$secondary_color: $green-yellow-crayola;
+$secondary_contrast_color: $feldgrau;
+$secondary_highlight_color:$orange-yellow-crayola;
+
+$header_color: $primary_color;
+$header_text_color:$green-yellow-crayola;
+$site_title_color: $green-yellow-crayola;
+
+
+$success_color:$forest-green-crayola;
+$danger_color:$coral;
+$screen_title: $vivid-burgundy;
+$screen_sub_title:$black-coral;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:wght@300&family=El+Messiri:wght@500&family=Special+Elite&family=The+Nautigal:wght@700&display=swap');
+
+//fonts
+$cinzel: 'Cinzel', serif;
+$el_messiri: 'El Messiri', sans-serif;
+$speical_elite: 'Special Elite', cursive;
+$the_nautigal: 'The Nautigal', cursive;
+$cormorant-garmond: 'Cormorant Garamond', serif;
+
+$site_title_font:$speical_elite;
+$screen_title_font: $speical_elite;
+$screen_subtitle_font:$the_nautigal;
+$screen_h3_font: $cinzel;
+$general-font: $cormorant-garmond;
